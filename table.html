@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table{
+            margin: auto;
+            width: 70%;
+            border-collapse: collapse;
+            border: 10px solid gray;
+        }
+        table tr{
+            border-bottom: 5px solid gray;
+        }
+        table tr, table td{
+            padding: 20px 0 ;
+            text-align: center;
+            border-inline: 5px dashed gray;
+
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+            <th scope="col">days/time</th>
+            <th scope="col">morning</th>
+            <th scope="col">afternoon</th>
+            <th scope="col">evening</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">monday</th>
+                <td>html</td>
+                <td>css</td>
+                <td>tailwind</td>
+            </tr>
+            <tr>
+                <th scope="row">wednesday</th>
+                <td rowspan="2">javascript</td>
+                <td>html</td>
+                <td>html</td>
+            </tr>
+            <tr>
+                <th scope="row">friday</th>
+                <!-- <td colspan="2">javascript</td> -->
+                <td colspan="2"> css</td>
+                <td>html</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+</body>
+</html>

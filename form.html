@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up for internship</title>
+    <link rel="stylesheet" href="./favicon.ico" type="image/x-icon">
+    <style>
+        label{
+            display:inline-block;
+            width: 100px;
+            margin-right: 50px;
+        }
+        li{
+            /* gives spacing around the li */
+            padding-block: 10px;
+            margin: 20px;
+            background: silver;
+        }
+        ul{
+            /* remove dots in ul */
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>sign up for internship</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend> personal information</legend>
+            <ul>
+                <li> <label for="full">full name </label>
+                    <input type="text" name="fullName" id= "full" placeholder="John Doe">
+                </li>
+                <li>
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" id="email" required>
+
+                </li>
+                <li> <label for="phone">Phone number</label>
+                    <input type="tel" name="tell" id="phone" placeholder="081094*****">
+                </li>
+                <li>
+                    <label for="address">home address</label>
+                    <input type="text" name="address" id="address">
+                </li>
+                <li>
+                    <label for="dob">dirth of birth</label>
+                    <input type="date" id="dob">
+
+                </li>
+                <li>
+                    <p>gender</p>
+
+                    <input type="radio" name="gender" id="gender" required>
+                    <label for="male">male</label>
+
+                    <input type="radio" name="gender" id="female" checked>
+                    <label for="female">female</label>
+                    
+                </li>
+                <li>
+                    <p> religion</p>
+                    <input type="radio" name="religion" id="christian" checked>
+                    <label for="christian">christian</label>
+                    <input type="radio" name="religion" id="muslim">
+                    <label for="muslim">muslim</label>
+                    <input type="radio" name="religion" id="traditional">
+                    <label for="traditional">traditional</label>
+                </li>
+            </ul>
+            <li>
+                <p> state of origin</p>
+                <select name="state" id="state" title="state of origin">
+                    <option value="none"selected>choose state </option>
+                    <optgroup> "South">
+                        <option value="lg">Lagos</option>
+                        <option value="an">Anabram</option>
+                        <option value="Ab'">Abia</option>
+                        <option value="En">Engugu</option>
+                        <option value="Og">Ogun</option>
+                </option>
+                    </optgroup>
+                    <optgroup label="North">
+                    
+                    <option value="abj">Abuja</option>
+                    <nassawara value="na"></nassawara>
+                    <option value="so">Sokoro</option>
+                    <option value="na">Katsina</option>
+                    <option value="kn">Kano</option>
+                    <option value="kd">Kaduna</option>
+
+                </select>
+            </li>
+        </fieldset>
+        <fieldset>
+            <legend>professional information</legend>
+            <button>
+                <li>
+                    <p>choose your stack</p>
+
+                    <input type="checkbox" name="stack"id="re">
+                    <label for="re">Mern</label>
+
+                    <input type="checkbox" name="stact" id="an">
+                    <label for="an"> MEAN</label> <br>
+
+                    <input type="checkbox" name="stack" id="dj">
+                    <label for="dj">Django</label>
+
+                    <input type="checkbox" name="stack" id="ja">
+                    <label for="ja">Java</label>
+
+                </li>
+                <li>
+                    <label for="resume">upload resume</label>
+                    <input type="file" name="resume" id="resume" accept=".png,.pdf" multiple >
+                </li>
+                <li>
+                    <label for="pw">set password</label>
+                    <input type="password" name="password" id="pw">
+                </li>
+                <!-- <input type="submit" value="appy"> -->
+                button type= "submit">apply</button>
+            </ul>
+        </fieldset>
+
+</body>
+</html>
